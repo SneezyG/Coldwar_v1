@@ -11,5 +11,5 @@ def twoSum(nums, target):
 indexes = twoSum([2, 3, 4, 6], 7)
 assert indexes == [1, 2] 
 assert indexes != [2, 3]
-#assert indexes == None, "one test failed, indexes can not be none"
+#assert indexes == None, "one test failed, indexes can't be None"
 print("All test passed")

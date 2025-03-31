@@ -9,15 +9,15 @@ function part(s) {
 
         if (z == x) {
             if (z == i) {
-                return [s]; // return the full string
+                return [s.length]; // return the string size
             }
             else if (z == 0) {
                 continue;
             }
             else {
-                let slicePart = [s.slice(0, z+1)]; // slice the string
-                let remainPart = part(s.slice(z+1)); // call the part func on the sliced remains
-                return slicePart.concat(remainPart); //return the array
+                let sliceLength = [z+1]; // size of the sliced string
+                let remainsLength = part(s.slice(z+1)); // call the part func on the sliced remains
+                return sliceLength.concat(remainsLength); //return array of substrings size
             }
         }
     }
